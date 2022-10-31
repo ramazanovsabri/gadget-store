@@ -1,0 +1,184 @@
+*, *::before, *::after {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+body{
+	color: #222222;
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+
+/*header tags start*/
+.header {
+	background-color: #222222;
+	width: 100vw;
+	min-height: 60px;
+	overflow-x: hidden;
+}
+.header__container {
+	max-width: 1132px;
+	margin: 0 auto;
+}
+.header-flex__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	display: flex;
+	align-items: center;
+	column-gap: 3px;
+	margin-top: 7px;
+}
+.header__cart {
+	display: flex;
+	align-items: center;
+	column-gap: 4px;
+	transform: translateY(45%);
+}
+.cart__icon{
+	padding: 5px 7px;
+	background-color:#BD1DBD;
+}
+@media (max-width: 1198.98px){
+	.header-flex__body{
+		padding: 0px 30px;
+	}
+}
+/*header tags end*/
+
+/*main tags start*/
+main{
+	max-width: 100vw;
+	overflow-x: hidden;
+	padding-bottom: 149px;
+}
+/*sort tags start*/
+.sort__products{
+	max-width: 985px;
+	margin: 0 auto;
+}
+.sort-products__container{
+	display: flex;
+	justify-content: space-between;
+}
+.button{
+	font-family: 'Arial', Helvetica;
+	padding: 11px 19px;
+	background: #EFEFEF;
+	border: 1px solid #A0A3AD;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button:hover{
+	background: lightgrey;
+	transition: all 500ms ease; 
+}
+.name__sort{
+	margin: 50px 0px 42px 0px;
+	font-size: 15px;
+}
+.price__sort{
+	margin: 44px 0px 38px 0px;
+	font-size: 16px;
+}
+/*sort tags end*/
+/*stock tags start*/
+.stock-grid__body{
+	display: grid;
+	row-gap: 40px;
+	grid-template-columns: repeat(4, 1fr);
+}
+.stock-grid__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 9px;
+}
+.stock-item__image{
+	align-self: center;
+}
+.stock-item__image{
+	width: 147px;
+	height: 300px;
+}
+.second-type-stock__image{
+	width: 300px;
+	height: 300px;
+}
+.third-type-stock__image{
+	width: 210px;
+	height: 300px;
+}
+.stock-item__bottom{
+	margin: 0 auto;
+	column-gap: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.stock-item__title{
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	margin: 10px 0px 11px 0px;
+}
+@media (max-width: 1198.98px){
+	.stock-grid__body{
+	grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 1025.98px){
+	.sort-products__container{
+		padding: 0px 20px;
+	}
+}
+@media (max-width: 936.98px){
+	.stock-grid__body{
+	grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 599.98px){
+	.stock-grid__body{
+	grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (max-width: 409.98px){
+	.name__sort{
+		font-size: 12px;
+	}
+	.price__sort{
+		font-size: 13px;
+	}
+}
+/*stock tags end*/
+/*main tags end*/
+
+/*footer tags start*/
+footer{
+	font-family: 'Dosis', sans-serif;
+	background: #222222;
+}
+.footer__container{
+	margin-left: 148px;
+}
+.footer__content a{
+	font-size: 15px;
+	line-height: 19px;
+	color: #FF7417;
+}
+.copyright{
+	color: #fff;
+	padding: 20px 0px;
+}
+@media (max-width: 1061.98px){
+	.footer__container{
+	margin-left: 65px;
+}
+}
+/*footer tags end*/
